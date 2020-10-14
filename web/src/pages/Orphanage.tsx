@@ -107,17 +107,17 @@ export default function Orphanage() {
               </div>
               {orphanage.open_on_weekend ? (
                 <div className="open-on-weekends">
-                <FiInfo size={32} color="#39CC83" />
-                Atendemos <br />
-                fim de semana
-              </div>
+                  <FiInfo size={32} color="#39CC83" />
+                  Atendemos <br />
+                  fim de semana
+                </div>
               ) : (
                 <div className="open-on-weekends dont-open">
-                <FiInfo size={32} color="#FF669D" />
-                Não atendemos <br />
-                fim de semana
-              </div>
-              )}
+                  <FiInfo size={32} color="#FF669D" />
+                  Não atendemos <br />
+                  fim de semana
+                </div>
+              ) }
             </div>
 
             {/* <button type="button" className="contact-button">
