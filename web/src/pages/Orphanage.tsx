@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { FaWhatsapp } from "react-icons/fa";
+// import { FaWhatsapp } from "react-icons/fa";
 import { FiClock, FiInfo } from "react-icons/fi";
 import { Map, Marker, TileLayer } from "react-leaflet";
 import { useParams } from 'react-router-dom'
@@ -18,7 +18,7 @@ interface Orphanage {
   about: string,
   instructions: string,
   opening_hours: string,
-  open_on_weekend: string,
+  open_on_weekends: string,
   images: Array<{
     url: string,
     id: number
@@ -57,9 +57,9 @@ export default function Orphanage() {
                     className={activeImageIndex === index ? 'active': ''}
                     type="button"
                     onClick={() => {
-                      setActiveImageIndex(index)
+                    setActiveImageIndex(index)
                     }}
-                    >
+                  >
                     <img src={image.url} alt={orphanage.name} />
                   </button>
                 ) 
@@ -105,7 +105,7 @@ export default function Orphanage() {
                 Segunda à Sexta <br />
                {orphanage.opening_hours}
               </div>
-              {orphanage.open_on_weekend ? (
+              { orphanage.open_on_weekends ? (
                 <div className="open-on-weekends">
                   <FiInfo size={32} color="#39CC83" />
                   Atendemos <br />
