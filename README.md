@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Happy" title="Happy" src="./web/src/images/Logo.svg" />
+    <img alt="Happy" title="Happy" src="https://github.com/lfeliperibeiro/happy-mobile/blob/main/src/images/Logo2.svg" />
 </h1>
 
 <p align="center">
